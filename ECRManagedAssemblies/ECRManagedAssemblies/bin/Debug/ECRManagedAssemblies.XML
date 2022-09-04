@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECRManagedAssemblies</name>
+    </assembly>
+    <members>
+        <member name="T:ECRManagedAssemblies.ECRManagedDataWriter">
+            <summary>
+            ECRManagedDataWriter class provides access to write ECR storage data in .net client applications
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataWriter.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+             ECRManagedDataWriter class constructor
+            </summary>
+             <param name="BaseServerName">Имя сервера размещения базы данных ECR_Config</param>
+             <param name="ConnectionTimeout">SQL connection timeout, ms</param>
+             <param name="CommandTimeout">SQL command timeout, ms</param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataWriter.#ctor(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            ECRManagedDataWriter class constructor
+            </summary>
+            <param name="BaseServerName">Имя сервера размещения базы данных ECR_Config</param>
+            <param name="DebugMode">Параметр определяет состояние режима DEBUG в классе</param>
+            <param name="ConnectionTimeout">SQL connection timeout, ms</param>
+            <param name="CommandTimeout">SQL command timeout, ms</param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataWriter.Initialize(System.String,System.Int32,System.Int32)">
+            <summary>
+            ECRManagedDataWriter class constructor initialization procedure
+            </summary>
+            <param name="BaseServerName"></param>
+            <param name="ConnectionTimeout"></param>
+            <param name="CommandTimeout"></param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataWriter.UpdateItemSummary(System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Обновление сводной таблицы ecr.ItemsSummary базы данных ECR_Config 
+            </summary>
+            <param name="ItemKey">Товарный ключ позиции</param>
+            <param name="ItemNumber">Номер позиции</param>
+            <param name="EntityName">Идентификатор типа контента</param>
+            <param name="OperationType">Тип операции (I/U/D/C)</param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataWriter.TransferEntity(System.String,System.Nullable{System.Int32},System.Byte[],System.String)">
+            <summary>
+            Загрузка файла оригинала контента в хранилище системы ECR
+            </summary>
+            <param name="ItemKey">Товарный ключ позиции</param>
+            <param name="ItemNumber">Номер позиции</param>
+            <param name="ItemBody">Тело файла</param>
+            <param name="EntityName">Идентификатор типа контента</param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataWriter.TransferView(System.String,System.Nullable{System.Int32},System.Byte[],System.String)">
+            <summary>
+            Загрузка файла представления контента в хранилище системы ECR
+            </summary>
+            <param name="ItemKey">Товарный ключ позиции</param>
+            <param name="ItemNumber">Номер позиции</param>
+            <param name="ItemBody">Тело файла</param>
+            <param name="ViewName">Идентификатор представления контента</param>
+        </member>
+        <member name="T:ECRManagedAssemblies.ECRManagedDataReader">
+            <summary>
+            ECRManagedDataReader class provides access to read ECR storage data in .net client applications
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            ECRManagedDataReader class constructor
+            </summary>
+            <param name="BaseServerName"></param>
+            <param name="ConnectionTimeout"></param>
+            <param name="CommandTimeout"></param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.#ctor(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            ECRManagedDataReader class constructor
+            </summary>
+            <param name="BaseServerName"></param>
+            <param name="ConnectionTimeout"></param>
+            <param name="CommandTimeout"></param>
+            <param name="DebugMode"></param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.Initialize(System.String,System.Int32,System.Int32)">
+            <summary>
+            ECRManagedDataReader class constructor initialization procedure
+            </summary>
+            <param name="BaseServerName"></param>
+            <param name="ConnectionTimeout"></param>
+            <param name="CommandTimeout"></param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetBindingsList">
+            <summary>
+            Процедура возвращает список привязок сущностей из таблицы ecr.Bindings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetBinding(System.String)">
+            <summary>
+            Процедура возвращает данные о привызке к сущности по имени из таблицы ecr.Bindings
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetBindingNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает имя объекта Binding по его целочисленному псевдониму;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним для объекта Binding</param>
+            <returns>String. Системное имя объекта Binding</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetBindingAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним объекта Binding по его системному имени
+            </summary>
+            <param name="SystemName">Системное имя для объекта Binding</param>
+            <returns>Integer. Целочисленный псевдоним объекта Binding</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.CheckBindingExists(System.String)">
+            <summary>
+            Процедра возвращает признак существования объекта Binding с заданным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для объекта Binding</param>
+            <returns>Bool. Признак существования объекта Binding</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetEntityList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetEntityListByBinding(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="BindingName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetEntity(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.CheckEntityExists(System.String)">
+            <summary>
+            Процедра возвращает признак существования объекта Entity с заданным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для обекта Entity</param>
+            <returns>Bool. Признак существования объекта Entity</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.IsEntityMultiplied(System.String)">
+            <summary>
+            Процедура возвращает признак множественности для объекта Entity с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя для объекта Entity</param>
+            <returns>Bool. Признак множественности бъекта Entity с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetEntityNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает системное имя для объекта Entity с заданным сцелочисленным псевдонимом;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним для объекта Entity</param>
+            <returns>String. Системное имя объекта Entity</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetEntityAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним для объекта Entity с заданным системным именем;
+            </summary>
+            <param name="SystemName"></param>
+            <returns>Integer. Целочисленный псевдоним для объекта Entity</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetViewList(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="Enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetViewListByBinding(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="BindingName"></param>
+            <param name="Enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetViewListByEntity(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="EntityName"></param>
+            <param name="Enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetView(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetViewNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает системное имя для объекта View с заданным целочисленным псевдонимом;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним для объекта View</param>
+            <returns>String. Системное имя объекта View</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetViewAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним для объекта View с заданным системным;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Integer. Целочисленный псевдоним объекта View</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.CheckViewExists(System.String)">
+            <summary>
+            Процедра возвращает признак существования объекта Vew с заданным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Bool. Признак существования объекта View с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.IsViewEnabled(System.String)">
+            <summary>
+            Процедура возвращает признак доступности объекта View с заданным системным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Bool. Признак доступности объекта View с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.IsViewMultiplied(System.String)">
+            <summary>
+            Процедура осуществляет проверку признака множественности объекта View с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Bool. Признак множественности объекта View с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetStorageList">
+            <summary>
+            Процедура возвращает список баз данных хранилищ файлового контента
+            </summary>
+            <returns>DataSet. Список баз данных хранилищ файлового контента</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetStorage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetStorageForEntity(System.String)">
+            <summary>
+            Процедура возвращает данные о хранилище файлового контента для заданного типа контента
+            </summary>
+            <param name="EntityName">Системное имя представления контента</param>
+            <returns>DataSet. Даные о хранилище файлового контента</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetStorageForView(System.String)">
+            <summary>
+            Процедура возвращает данные о хранилище файлового контента для заданного представления контента
+            </summary>
+            <param name="ViewName">Системное имя представления контента</param>
+            <returns>DataSet. Даные о хранилище файлового контента</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.CheckStorageExists(System.String)">
+            <summary>
+            Процедура возвращает признак существования объекта Storage с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя объекта Storage</param>
+            <returns>Bool. Признак существования объекта Storage с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetStorageNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает системное имя объекта Storage по его целочисленному псевдониму;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним объекта Storage</param>
+            <returns>String. Системное имя объекта Storage</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetStorageAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним объекта Storage по его системному имени;
+            </summary>
+            <param name="SystemName">Системное имя объекта Storage</param>
+            <returns>Целочисленный псевдоним объекта Storage</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetEntityItem(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Процедура возвращает данные об оригинале файлового контента, соответствующего заданной позиции
+            </summary>
+            <param name="EntityName">Системное имя сущности для файлового контента</param>
+            <param name="ItemKey">Ключ позиции</param>
+            <param name="ItemNumber">Номер позиции (опционально)</param>
+            <returns>DataSet. Данные об оригинале файлового контента</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetEntityItems(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Процедура возвращает данные об оригиналах файлового контента, соответствующих заданной позиции
+            </summary>
+            <param name="EntityName">Системное имя сущности для файлового контента</param>
+            <param name="ItemKey">Ключ позиции</param>
+            <param name="ItemNumber">Номер позиции (опционально)</param>
+            <returns>DataSet. Данные об оригиналах файлового контента</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedDataReader.GetViewItem(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Процедура возвращает данные о представлении файлового контента, соответствующего заданной позиции
+            </summary>
+            <param name="ViewName">Системное имя сущности для файлового контента</param>
+            <param name="ItemKey">Ключ позиции</param>
+            <param name="ItemNumber">Номер позиции (опционально)</param>
+            <returns>DataSet. Данные о представлении файлового контента</returns>
+        </member>
+        <member name="T:ECRManagedAssemblies.ECRSourceCatalogEntityChecker">
+            <summary>
+            Класс предоставляет доступ к методам проверки товарных позиций в каталогах ECR
+            </summary>
+        </member>
+        <member name="T:ECRManagedAssemblies.IECRSourceCatalogEntityChecker">
+            <summary>
+            Интерфейс IECRSourceCatalogEntityChecker
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.IECRSourceCatalogEntityChecker.CheckItemExists(System.String,System.String,System.String)">
+            <summary>
+            Функция производит проверку наличия позиции с заданными параметрами в каталоге сущностей
+            </summary>
+            <param name="KeyType">Тип ключа позиции для поиска</param>
+            <param name="KeyValue">Значение ключа</param>
+            <param name="EntityType">Тип сущности</param>
+            <returns>true если позиция с заданными параметрами найдена в каталоге сущностей, false в противном случае</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.IECRSourceCatalogEntityChecker.CompareKeys(System.String,System.String,System.String,System.String)">
+            <summary>
+            Функция сопоставляет значения ключа исходного типа для позиции с заданными параметрами с искомым и выдает значение ключа искомого типа
+            </summary>
+            <param name="KeyType">Идентификатор исходного типа ключа</param>
+            <param name="KeyValue">Значение ключа</param>
+            <param name="EntityType">Тип сущности</param>
+            <param name="LookKeyType">Идентификатор искомого типа ключа</param>
+            <returns>Значение ключа искомого типа</returns>
+        </member>
+        <member name="F:ECRManagedAssemblies.ECRSourceCatalogEntityChecker._conn">
+            <summary>
+            ECRSourceCatalogEntityChecker() class source sql connection
+            </summary>
+        </member>
+        <member name="F:ECRManagedAssemblies.ECRSourceCatalogEntityChecker._cmd">
+            <summary>
+            WebCatalogEntityChecker() class source sql command
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRSourceCatalogEntityChecker.#ctor(System.String)">
+            <summary>
+            Конструктор класса WebCatalogEntityChecker()
+            </summary>
+            <param name="ConnectionString">Строка соединения с базой данных</param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRSourceCatalogEntityChecker.CheckItemExists(System.String,System.String,System.String)">
+            <summary>
+            Функция производит проверку наличия позиции с заданными параметрами в каталоге сущностей
+            </summary>
+            <param name="KeyType">Тип ключа позиции для поиска</param>
+            <param name="KeyValue">Значение ключа</param>
+            <param name="EntityType">Тип сущности</param>
+            <returns>true если позиция с заданными параметрами найдена в каталоге сущностей, false в противном случае</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRSourceCatalogEntityChecker.CompareKeys(System.String,System.String,System.String,System.String)">
+            <summary>
+            Функция сопоставляет значения ключа исходного типа для позиции с заданными параметрами с искомым и выдает значение ключа искомого типа
+            </summary>
+            <param name="KeyType">Идентификатор исходного типа ключа</param>
+            <param name="KeyValue">Значение ключа</param>
+            <param name="EntityType">Тип сущности</param>
+            <param name="LookKeyType">Идентификатор искомого типа ключа</param>
+            <returns>Значение ключа искомого типа</returns>
+        </member>
+        <member name="T:ECRManagedAssemblies.ECRSourceCatalogProvider">
+            <summary>
+            Класс предоставляет информацию о способах доступа к экземплярам товарных каталогов,
+            представленных соответствующими объектами доступа к данным.
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRSourceCatalogProvider.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Конструктор класса SourceCatalogDataConnectionProvider()
+            </summary>
+            <param name="ECRConfigConnectionString">Строка подключения к базе данных ECR_Config</param>
+            <param name="CatalogName">Имя каталога ECR</param>
+            <param name="InstanceName">Имя экземпляра каталога ECR</param>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.Name">
+            <summary>
+            Наименование ресурса, предоставляющего доступ к товарному каталогу
+            </summary>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.InstanceName">
+            <summary>
+            Наименование экземпляра ресурса, предоставляющего доступ к товарному каталогу
+            </summary>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.CatalogId">
+            <summary>
+            Идентификатор GUID экземпляра ресурса, предлставляющего доступ к товарному каталогу
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.BindingType">
+            <summary>
+            Свойство определяет тип связывания с экземпляром ресурса, предоставляющего доступ к данным товарного каталога.
+            Фактически свойство определяет способ доступа к данным товарного каталога,
+                ссылку на внутренний класс системы ECR, через который осуществляется доступ к данным.
+            </summary>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.Description">
+            <summary>
+            Свойство определяет описание экземпляра ресурса, предоставляющего доступ к товарному каталогу
+            </summary>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.Enabled">
+            <summary>
+            Свойство определяет доступность ресурса, предоставляющего доступ к товарному каталогу
+            </summary>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.Priority">
+            <summary>
+            Свойство определяет приоритет доступа к ресурсу, предоставляющему доступ к товарному каталогу.
+            Разбивка на приоритеты используется при одновременном анализе данных по нескольким каталогам одного или нескольких типов.
+            </summary>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.RemoteServerName">
+            <summary>
+            Свойство определяет имя сервера для вызова удаленного объекта, предоставляющего доступ к товарному каталогу.
+            Опционально, спользуется для объектов доступа к товарным каталогам на основе COM-объектов.
+            </summary>
+        </member>
+        <member name="P:ECRManagedAssemblies.ECRSourceCatalogProvider.ConnectionString">
+            <summary>
+            Свойство определяет строку соединения с базой данных, соответствующую ресурсу, предоставляющему доступ к товарному каталогу.
+            Опционально, используется для объектов доступа к товарным каталогам на основе прямого соединяния с БД.
+            </summary>
+        </member>
+        <member name="T:ECRManagedAssemblies.ECRManagedAssembliesDllConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedAssembliesDllConfig.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedAssembliesDllConfig.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedAssembliesDllConfig.Switch(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:ECRManagedAssemblies.ECRManagedAssembliesDllConfig.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ECRManagedAssemblies.SourceCatalogEntityChecker">
+            <summary>
+            Предоставляет доступ к классам проверки данных позиций по известным типам каталогов сущностей;
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.SourceCatalogEntityChecker.DefineEntityChecker">
+            <summary>
+            Процедура определяет тип привязки к каталогу сущностей
+            </summary>
+        </member>
+        <member name="M:ECRManagedAssemblies.SourceCatalogEntityChecker.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Конструктор класса ProcesingChainEntityChecker()
+            </summary>
+            <param name="ECRConfigConnectionString">Строка подключения к базе данных ECR_Config</param>
+            <param name="CatalogName">Идентификатор каталога сущностей</param>
+            <param name="InstanceName">Идентификатор экземпляра каталога сущностей</param>
+        </member>
+        <member name="M:ECRManagedAssemblies.SourceCatalogEntityChecker.#ctor(System.String,System.String)">
+            <summary>
+            Конструктор класса ProcessingChainEntityChecker()
+            </summary>
+            <param name="ECRConfigConnectionString">Строка подключения к базе данных ECR_Config</param>
+            <param name="CatalogName">Идентификатор каталога сущностей</param>
+        </member>
+        <member name="M:ECRManagedAssemblies.SourceCatalogEntityChecker.CheckItemExists(System.String,System.String,System.String)">
+            <summary>
+            Функция производит проверку наличия позиции с заданными параметрами в каталоге сущностей
+            </summary>
+            <param name="KeyType">Тип ключа позиции для поиска</param>
+            <param name="KeyValue">Значение ключа</param>
+            <param name="EntityType">Тип сущности</param>
+            <returns>true если позиция с заданными параметрами найдена в каталоге сущностей, false в противном случае</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.SourceCatalogEntityChecker.CheckItemExists(System.String,System.String)">
+            <summary>
+            Функция производит проверку наличия позиции с заданными параметрами в каталоге сущностей
+            </summary>
+            <param name="KeyType">Тип ключа позиции для поиска</param>
+            <param name="KeyValue">Значение ключа</param>
+            <returns>true если позиция с заданными параметрами найдена в каталоге сущностей, false в противном случае</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.SourceCatalogEntityChecker.CompareKeys(System.String,System.String,System.String,System.String)">
+            <summary>
+            Функция сопоставляет значения ключа исходного типа для позиции с заданными параметрами с искомым и выдает значение ключа искомого типа 
+            </summary>
+            <param name="KeyType">Идентификатор исходного типа ключа</param>
+            <param name="KeyValue">Значение ключа</param>
+            <param name="EntityType">Тип сущности</param>
+            <param name="LookKeyType">Идентификатор искомого типа ключа</param>
+            <returns>Значение ключа искомого типа</returns>
+        </member>
+        <member name="M:ECRManagedAssemblies.SourceCatalogEntityChecker.CompareKeys(System.String,System.String,System.String)">
+            <summary>
+            Функция производит проверку наличия позиции с заданными параметрами в каталоге сущностей
+            </summary>
+            <param name="KeyType">Идентификатор исходного типа ключа</param>
+            <param name="KeyValue">Значение ключа</param>
+            <param name="LookKeyType">Идентификатор искомого типа ключа</param>
+            <returns>Значение ключа искомого типа</returns>
+        </member>
+    </members>
+</doc>

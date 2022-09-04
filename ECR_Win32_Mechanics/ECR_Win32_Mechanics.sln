@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{914356F9-7C25-42BB-ACAC-1532B86B4460}"
+	ProjectSection(SolutionItems) = preProject
+		ECR.FilesExtractedActions.cmd = ECR.FilesExtractedActions.cmd
+		ECR.PriorActions.cmd = ECR.PriorActions.cmd
+		JPGCLEAN.EXE = JPGCLEAN.EXE
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECR.ChangeManager", "ECR.ChangeManager\ECR.ChangeManager.csproj", "{A4411EBF-1692-4A83-9922-3EE3915EC91B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ECR.ChangeManager.Installer", "ECR.ChangeManager.Installer\ECR.ChangeManager.Installer.vdproj", "{5951D279-5616-4378-9F8B-1C076D1F3369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECR.KeysComparer", "ECR.KeysComparer\ECR.KeysComparer.csproj", "{CC4297A9-DCC9-4970-AE37-F61489A68A86}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ECR.KeysComparer.Installer", "ECR.KeysComparer.Installer\ECR.KeysComparer.Installer.vdproj", "{7B46F206-AAC8-4BC3-AE7E-0760BE1EB6A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECR.ProcessingManager", "ECR.ProcessingManager\ECR.ProcessingManager.csproj", "{C428F7D1-A675-4FB9-8D7D-BE57FA3989FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECR.FilesExtractor", "ECR.FilesExtractor\ECR.FilesExtractor.csproj", "{75D47F9A-F40D-420D-B2A8-F6222F3A4D59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECR.CatalogMigration", "ECR.CatalogMigration\ECR.CatalogMigration.csproj", "{7E197BD5-1757-4963-BDC8-A2FA296A053A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ECR.ChangeManager\\ECR.ChangeManager.csproj
+		SccProjectName0 = ECR.ChangeManager
+		SccAuxPath0 = http://tfs:8080
+		SccLocalPath0 = ECR.ChangeManager
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ECR.ChangeManager.Installer\\ECR.ChangeManager.Installer.vdproj
+		SccProjectName1 = ECR.ChangeManager.Installer
+		SccAuxPath1 = http://tfs:8080
+		SccLocalPath1 = ECR.ChangeManager.Installer
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4411EBF-1692-4A83-9922-3EE3915EC91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4411EBF-1692-4A83-9922-3EE3915EC91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4411EBF-1692-4A83-9922-3EE3915EC91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4411EBF-1692-4A83-9922-3EE3915EC91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5951D279-5616-4378-9F8B-1C076D1F3369}.Debug|Any CPU.ActiveCfg = Debug
+		{5951D279-5616-4378-9F8B-1C076D1F3369}.Release|Any CPU.ActiveCfg = Release
+		{CC4297A9-DCC9-4970-AE37-F61489A68A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4297A9-DCC9-4970-AE37-F61489A68A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4297A9-DCC9-4970-AE37-F61489A68A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4297A9-DCC9-4970-AE37-F61489A68A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B46F206-AAC8-4BC3-AE7E-0760BE1EB6A1}.Debug|Any CPU.ActiveCfg = Debug
+		{7B46F206-AAC8-4BC3-AE7E-0760BE1EB6A1}.Release|Any CPU.ActiveCfg = Release
+		{C428F7D1-A675-4FB9-8D7D-BE57FA3989FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C428F7D1-A675-4FB9-8D7D-BE57FA3989FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C428F7D1-A675-4FB9-8D7D-BE57FA3989FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C428F7D1-A675-4FB9-8D7D-BE57FA3989FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D47F9A-F40D-420D-B2A8-F6222F3A4D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D47F9A-F40D-420D-B2A8-F6222F3A4D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D47F9A-F40D-420D-B2A8-F6222F3A4D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D47F9A-F40D-420D-B2A8-F6222F3A4D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E197BD5-1757-4963-BDC8-A2FA296A053A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E197BD5-1757-4963-BDC8-A2FA296A053A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E197BD5-1757-4963-BDC8-A2FA296A053A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E197BD5-1757-4963-BDC8-A2FA296A053A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

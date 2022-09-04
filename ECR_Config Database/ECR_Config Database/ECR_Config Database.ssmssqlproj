@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ECR_Config Database">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="bm-dev\sql2008:WORKGROUP\borschev_m">
+          <Created>2010-04-06T20:06:58.2771686+07:00</Created>
+          <Type>SQL</Type>
+          <Server>bm-dev\sql2008</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="ddt-test:WORKGROUP\borschev_m">
+          <Created>2009-06-25T10:37:24.3357838+07:00</Created>
+          <Type>SQL</Type>
+          <Server>ddt-test</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="ddt-test\sql2008:WORKGROUP\borschev_m">
+          <Created>2010-02-05T14:28:28.9852904+06:00</Created>
+          <Type>SQL</Type>
+          <Server>ddt-test\sql2008</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="or-bkpro2:WORKGROUP\borschev_m">
+          <Created>2009-06-29T16:01:06.6488271+07:00</Created>
+          <Type>SQL</Type>
+          <Server>or-bkpro2</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>ECR_Config</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="or-bkpro2\sql2008:WORKGROUP\borschev_m">
+          <Created>2010-02-04T16:06:20.4228852+06:00</Created>
+          <Type>SQL</Type>
+          <Server>or-bkpro2\sql2008</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="hotfix_update_ECR_Config_1.3.5.34.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>hotfix_update_ECR_Config_1.3.5.34.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.3.4.33_1.3.5.34.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bm-dev\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bm-dev\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.3.4.33_1.3.5.34.sql</FullPath>
+        </FileNode>
+        <FileNode Name="hotfix_update_EC_Config_1.3.4.33_1.4.5.34.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>hotfix_update_EC_Config_1.3.4.33_1.4.5.34.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.3.3.32_1.3.4.33.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.3.3.32_1.3.4.33.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.3.2.31_1.3.3.32.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.3.2.31_1.3.3.32.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.3.1.30_1.3.2.31.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.3.1.30_1.3.2.31.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.23.29_1.3.1.30.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.23.29_1.3.1.30.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.22.28_1.2.23.29.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.22.28_1.2.23.29.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.21.27_1.2.22.28.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.21.27_1.2.22.28.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.20.26_1.2.21.27.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.20.26_1.2.21.27.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.19.25_1.2.20.26.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.19.25_1.2.20.26.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.18.24-1.2.19.25.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.18.24-1.2.19.25.sql</FullPath>
+        </FileNode>
+        <FileNode Name="create_db_ECR_Config.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>create_db_ECR_Config.sql</FullPath>
+        </FileNode>
+        <FileNode Name="generate_minimum_data_ECR_Config.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>generate_minimum_data_ECR_Config.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.17.23_1.2.18.24.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.17.23_1.2.18.24.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.16.22_1.2.17.23.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.16.22_1.2.17.23.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.15.21_1.2.16.22.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.15.21_1.2.16.22.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.14.20_1.2.15.21.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.14.20_1.2.15.21.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.13.19_1.2.14.20.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.13.19_1.2.14.20.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.12.18_1.2.13.19.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.12.18_1.2.13.19.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.11.17_1.2.12.18.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.11.17_1.2.12.18.sql</FullPath>
+        </FileNode>
+        <FileNode Name="updare_ECR_Config_1.2.10.16_1.2.11.17.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>updare_ECR_Config_1.2.10.16_1.2.11.17.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.9.15-1.2.10.16.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.9.15-1.2.10.16.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.8.14-1.2.9.15.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.8.14-1.2.9.15.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.7.13-1.2.8.14.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.7.13-1.2.8.14.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.6.12_1.2.7.13.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.6.12_1.2.7.13.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.5.11-1.2.6.12.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.5.11-1.2.6.12.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.4.10-1.2.5.11.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.4.10-1.2.5.11.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.3.9-1.2.4.10.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.3.9-1.2.4.10.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.2.8-1.2.3.9.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.2.8-1.2.3.9.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.1.7_1.2.2.8.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.1.7_1.2.2.8.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.2.0.6-1.2.1.7.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.2.0.6-1.2.1.7.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Config_1.0.5.5_1.2.0.6.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Config_1.0.5.5_1.2.0.6.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+  <SccProjectName>$/ECR services/ECR_Config Database</SccProjectName>
+  <SccAuxPath />
+  <SccLocalPath>..</SccLocalPath>
+  <SccProvider>MSSCCI:Team Foundation Server MSSCCI Provider</SccProvider>
+</SqlWorkbenchSqlProject>

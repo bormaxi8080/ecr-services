@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECRManagedAssemblies", "ECRManagedAssemblies\ECRManagedAssemblies.csproj", "{3B2B8164-0B73-4726-AD2C-300733ACF60B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ECRManagedAssemblies.Install", "ECRManagedAssemblies.Install\ECRManagedAssemblies.Install.vdproj", "{964C4858-153F-4BAA-8D8C-B3A7DC831E39}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccProjectUniqueName0 = ECRManagedAssemblies\\ECRManagedAssemblies.csproj
+		SccProjectName0 = ECRManagedAssemblies
+		SccAuxPath0 = http://tfs:8080
+		SccLocalPath0 = ECRManagedAssemblies
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B2B8164-0B73-4726-AD2C-300733ACF60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2B8164-0B73-4726-AD2C-300733ACF60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2B8164-0B73-4726-AD2C-300733ACF60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2B8164-0B73-4726-AD2C-300733ACF60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964C4858-153F-4BAA-8D8C-B3A7DC831E39}.Debug|Any CPU.ActiveCfg = Debug
+		{964C4858-153F-4BAA-8D8C-B3A7DC831E39}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

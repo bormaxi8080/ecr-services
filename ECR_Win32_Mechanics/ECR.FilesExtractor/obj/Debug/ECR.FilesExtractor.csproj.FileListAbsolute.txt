@@ -1,0 +1,14 @@
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.exe.config
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.pdb
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\obj\Debug\ResolveAssemblyReference.cache
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\obj\Debug\ECR.FilesExtractor.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\obj\Debug\ECR.FilesExtractor.pdb
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.exe.CodeAnalysisLog.xml
+D:\Проекты ДДТ\ECR services\trunk\src\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.exe.lastcodeanalysissucceeded
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.exe.config
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.FilesExtractor\obj\Debug\ECR.FilesExtractor.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.FilesExtractor\obj\Debug\ECR.FilesExtractor.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.FilesExtractor\bin\Debug\ECR.FilesExtractor.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.FilesExtractor\obj\Debug\ResolveAssemblyReference.cache

@@ -1,0 +1,14 @@
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.exe.config
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.pdb
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\obj\Debug\ResolveAssemblyReference.cache
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\obj\Debug\ECR.KeysComparer.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\obj\Debug\ECR.KeysComparer.pdb
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.xml
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.exe.config
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\obj\Debug\ECR.KeysComparer.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\obj\Debug\ECR.KeysComparer.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.KeysComparer\bin\Debug\ECR.KeysComparer.xml

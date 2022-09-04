@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assemblies Version="1073741833">
+  <Assembly Name="ConfigurationExtensions, Version=1.3.0.28, Culture=neutral, PublicKeyToken=44465f47f00af856" Image="7b425389-c974-4742-86a6-70bc4554e120" Timestamp="633770976320000000" />
+  <Assembly Name="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821" Image="60966165-f0e2-4b56-8200-edfefff17542" Timestamp="633492918380000000" XmlDocIndexTimestamp="633492918400000000" />
+  <Assembly Name="log4net.MDCReflector, Version=1.1.5.26, Culture=neutral, PublicKeyToken=bb8c2393a61c6ebf" Image="4ad2479e-dad0-46e6-8070-22b18a1296d3" Timestamp="633492953780000000" />
+  <Assembly Name="JetBrains.Annotations, Version=4.0.819.19, Culture=neutral, PublicKeyToken=1010a0d8d6380325" Image="1580414f-3b64-4788-90e6-f27a655af668" Timestamp="633486203860000000" XmlDocIndexTimestamp="633486203860000000" />
+</Assemblies>

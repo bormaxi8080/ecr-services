@@ -1,0 +1,30 @@
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.pdb
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.xml
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.tlb
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\Interop.COMAdmin.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\Interop.COMAdmin.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.csproj.ResolveComReference.cache
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.CustomActionsInstaller.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.ExportProxy.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.IdentityOptions.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.SetupOptions.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.csproj.GenerateResource.Cache
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.pdb
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.dll
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.pdb
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.xml
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\ECRManagedComObjects.tlb
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\x86\Debug\Interop.COMAdmin.dll
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\Interop.COMAdmin.dll
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.csproj.ResolveComReference.cache
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.CustomActionsInstaller.resources
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.ExportProxy.resources
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.IdentityOptions.resources
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.SetupOptions.resources
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.csproj.GenerateResource.Cache
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.dll
+D:\TFSProjects\ECR services\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\x86\Debug\ECRManagedComObjects.pdb

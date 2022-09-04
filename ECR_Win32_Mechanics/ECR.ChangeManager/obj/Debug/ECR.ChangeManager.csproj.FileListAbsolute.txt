@@ -1,0 +1,18 @@
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.exe.config
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.pdb
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ResolveAssemblyReference.cache
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.pdb
+C:\Documents and Settings\borschev_m\Desktop\src\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.exe.config
+C:\Documents and Settings\borschev_m\Desktop\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.exe
+C:\Documents and Settings\borschev_m\Desktop\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.exe.config
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.ChangeManager\bin\Debug\ECR.ChangeManager.exe.config
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.exe
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.ChangeManager\obj\Debug\ECR.ChangeManager.pdb

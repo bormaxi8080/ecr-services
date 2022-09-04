@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECRManagedComObjects", "ECRManagedComObjects\ECRManagedComObjects.csproj", "{A61DCF94-6ED9-4128-964B-229B0108FA41}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ECRManagedComObjects.Install", "ECRManagedComObjects.Install\ECRManagedComObjects.Install.vdproj", "{BC0BA198-ED84-4F21-B580-6797D0305214}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ECRManagedComObjects\\ECRManagedComObjects.csproj
+		SccProjectName1 = ECRManagedComObjects
+		SccLocalPath1 = ECRManagedComObjects
+		SccProjectUniqueName2 = ECRManagedComObjects.Install\\ECRManagedComObjects.Install.vdproj
+		SccProjectName2 = ECRManagedComObjects.Install
+		SccLocalPath2 = ECRManagedComObjects.Install
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Debug|Any CPU.Build.0 = Debug|x86
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Debug|x86.Build.0 = Debug|Any CPU
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Release|x86.ActiveCfg = Release|x86
+		{A61DCF94-6ED9-4128-964B-229B0108FA41}.Release|x86.Build.0 = Release|x86
+		{BC0BA198-ED84-4F21-B580-6797D0305214}.Debug|Any CPU.ActiveCfg = Debug
+		{BC0BA198-ED84-4F21-B580-6797D0305214}.Debug|x86.ActiveCfg = Debug
+		{BC0BA198-ED84-4F21-B580-6797D0305214}.Debug|x86.Build.0 = Debug
+		{BC0BA198-ED84-4F21-B580-6797D0305214}.Release|Any CPU.ActiveCfg = Release
+		{BC0BA198-ED84-4F21-B580-6797D0305214}.Release|x86.ActiveCfg = Release
+		{BC0BA198-ED84-4F21-B580-6797D0305214}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TextTemplating) = postSolution
+		TextTemplating = 1
+	EndGlobalSection
+EndGlobal

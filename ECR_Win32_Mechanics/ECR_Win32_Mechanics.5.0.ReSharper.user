@@ -1,0 +1,32 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A4411EBF-1692-4A83-9922-3EE3915EC91B/f:ChangeManageAction.cs" caret="22529" fromTop="11" />
+      <File id="C428F7D1-A675-4FB9-8D7D-BE57FA3989FC/f:IECRProcessor.cs" caret="175" fromTop="0" />
+      <File id="C428F7D1-A675-4FB9-8D7D-BE57FA3989FC/f:GraphicsProcessor.cs" caret="11105" fromTop="0" />
+      <File id="C428F7D1-A675-4FB9-8D7D-BE57FA3989FC/f:ProcessingAction.cs" caret="23502" fromTop="0" />
+      <File id="C428F7D1-A675-4FB9-8D7D-BE57FA3989FC/f:TextProcessor.cs" caret="0" fromTop="0" />
+      <File id="C428F7D1-A675-4FB9-8D7D-BE57FA3989FC/f:App.config" caret="3499" fromTop="23" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A4411EBF-1692-4A83-9922-3EE3915EC91B/f:ChangeManageAction.cs" caret="22860" fromTop="7" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5.5\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

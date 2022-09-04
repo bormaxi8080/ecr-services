@@ -1,0 +1,18 @@
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ResolveAssemblyReference.cache
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.exe.config
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.pdb
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ECR.ProcessingManager.exe
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ECR.ProcessingManager.pdb
+D:\Проекты ДДТ\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.XML
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.exe.config
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ECR.ProcessingManager.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ECR.ProcessingManager.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.XML
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.exe.config
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.ProcessingManager\bin\Debug\ECR.ProcessingManager.XML
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ECR.ProcessingManager.exe
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.ProcessingManager\obj\Debug\ECR.ProcessingManager.pdb

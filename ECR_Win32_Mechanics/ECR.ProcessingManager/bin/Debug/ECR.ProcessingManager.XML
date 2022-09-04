@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECR.ProcessingManager</name>
+    </assembly>
+    <members>
+        <member name="T:ECR.ProcessingManager.ExecuteActionsConfigSection">
+            <summary>
+            The Class that will have the XML config file data loaded into it via the configuration Manager.
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionsConfigSection.ActionItems">
+            <summary>
+            The value of the property here "actions" needs to match that of the config file section
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.ProcessingAgent">
+            <summary>
+             Класс предоставляет интерфейс для управления заданиями формирования файлов xml из входящих файлов контента нативных форматов
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAgent.#ctor">
+            <summary>
+            Конструктор класса ProcessingAgent
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAgent.#ctor(System.Boolean)">
+            <summary>
+            Конструктор класса ProcessingAgent
+            </summary>
+            <param name="DebugMode">Определяет включение/выключение режима debug в классе. DebugMode = true включает режим debug</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAgent.ConfigureLoggingSubsystem">
+            <summary>
+            Конфигурирование подсистемы логгирования
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAgent.Debug(System.String)">
+            <summary>
+            Запись данных режиме в Log.Debug() с проверкой режима отладки
+            </summary>
+            <param name="message">Сообщение для debug</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAgent.Debug(System.String,System.Exception)">
+            <summary>
+            Запись данных в режиме Log.Debug() с проверкой режима отладки и описанием Exception
+            </summary>
+            <param name="message">Сообщение для Debug</param>
+            <param name="e">Exception для debug</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAgent.Execute(System.Int32)">
+            <summary>
+            Метод запускает задание с номером index на выполнение
+            </summary>
+            <param name="index">Индекс задания</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAgent.Execute">
+            <summary>
+             Метод запускает все доступные задания на выполнение
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAgent.DebugMode">
+            <summary>
+            Свойство определяет включение/выключение режима debug в классе
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAgent.Count">
+            <summary>
+            Свойство возвращает количество заданий
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.ProcessingManager">
+            <summary>
+            Оберточный класс, реализующий функциональность класса ProcessingAgent в консоли
+            </summary>
+        </member>
+        <member name="F:ECR.ProcessingManager.ProcessingManager._configuration">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.Main(System.String[])">
+            <summary>
+            Главная процедура запуска консоли приложения
+            </summary>
+            <param name="p_args">Массив аргументов командной строки</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.Execute(System.String[])">
+            <summary>
+            Функция запускает основную процедуру приложения
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.IsApplicationInteractive">
+            <summary>
+            Функция определяет, может ли приложение взаимодействовать с рабочим столом пользователя;
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.ConfigureConsoleOutput">
+            <summary>
+            Настройка параметров вывода в консоль
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.ConfigureLoggingSubsystem">
+            <summary>
+            Конфигурирование подсистемы логгирования (log4net) 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.PrintDebugHeader">
+            <summary>
+            Вывод информации о включении отладочного режима в приложении
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.PrintFooter">
+            <summary>
+            Остановка приложения с ожиданием нажатия любой клавиши в интерактивном режиме
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.PrintAssemblyInfo">
+            <summary>
+            Процедура выводит информацию о приложении/сборке в консоль
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.GetAssemblyInfo">
+            <summary>
+            Функция возвращает краткую информацию о наименовании и версии сборки
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingManager.PrintUsageStatement">
+            <summary>
+            Процедура выводит в консоль справочную информацию о доступных командах консоли приложения
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.IECRProcessor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.IECRProcessor.LoadContainerProperties(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ContainerId"></param>
+        </member>
+        <member name="M:ECR.ProcessingManager.IECRProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.IECRProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="Params"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.IECRProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String[],System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="Params"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.IECRProcessor.GetBase">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.IECRProcessor.CreateView(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ItemType"></param>
+            <param name="Params"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.IECRProcessor.CreateView(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="ItemType"></param>
+            <param name="Params"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ECR.ProcessingManager.IECRProcessor.ContainerId">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.ProcessingAction">
+            <summary>
+            Класс предоставляет интерфейс для управления заданием преобразования и загрузки данных в хранилище системы ECR
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.#ctor(System.String)">
+            <summary>
+            Конструктор класса ProcessingAction
+            </summary>
+            <param name="key">Ключ задания обработки и загрузки данных в ECR. Уникальный идентификатор guid</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.#ctor(System.String,System.Boolean)">
+            <summary>
+            Конструктор класса ProcessingAction
+            </summary>
+            <param name="key">Ключ задания обработки и загрузки данных в ECR. Уникальный идентификатор guid</param>
+            <param name="DebugMode">Определяет включение/выключение режима Debug в классе. DebugMode = true включает режим debug</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.ConfigureLoggingSubsystem">
+            <summary>
+            Конфигурирование подсистемы логгирования
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.Debug(System.String)">
+            <summary>
+            Запись данных режиме в Log.Debug() с проверкой режима отладки
+            </summary>
+            <param name="message">Сообщение для debug</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.Debug(System.String,System.Exception)">
+            <summary>
+            Запись данных в режиме Log.Debug() с проверкой режима отладки и описанием Exception
+            </summary>
+            <param name="message">Сообщение для debug</param>
+            <param name="e">Exception для debug</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.Enable">
+            <summary>
+            Метод переводит состояние задания формирования файла xml в "доступно"
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.Disable">
+            <summary>
+            Метод переводит состояние задания формирования файла xml в "недоступно"
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.Execute">
+            <summary>
+            Метод запускает задание обработки и загрузки данных в хранилище ECR
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ProcessingAction.ConvertToBase64String(System.String)">
+            <summary>
+            Процедура конвертации строки Unicode в строку base64
+            </summary>
+            <param name="s">Unicode string</param>
+            <returns>Base64 string</returns>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.DebugMode">
+            <summary>
+            Свойство определяет режим debug в классе
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.Key">
+            <summary>
+            Свойство возвращает ключ задания формирования файла xml (уникальный идентификатор guid)
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.Enabled">
+            <summary>
+            Свойство возвращет состояние доступности задания формирования файла xml
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.Overwrite">
+            <summary>
+            Свойство возвращет признак перезаписи уже существующих элементов в хранилище ECR
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.ItemType">
+            <summary>
+            Свойство определяет системное имя сущности для загрузки
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.ContainerType">
+            <summary>
+            Тип контейнера для определения преобразований
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.ContainerId">
+            <summary>
+            Идентификатор контейнера преобразований
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.Source">
+            <summary>
+            Свойство определяет путь к входящей папке с файлами для преобразования и загрузки в систему ECR;
+            В случае отсутствия папки либо доступа к ней генерируется exception;
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.Mask">
+            <summary>
+            Свойство определяет маску имени файла во входящей папке
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.BackupTo">
+            <summary>
+            Свойство определяет путь к исходящей папке с файлами для формирования файла xml;
+            В случае отсутствия папки либо доступа к ней генерируется exception;
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.DefaultProcessing">
+            <summary>
+            Свойство определяет нужно ли применять преобразования, заданные по умолчанию, к сущности ecr.Entity при обработке конвейером
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.SaveOriginals">
+            <summary>
+            Свойство определяет нужно ли сохранять оригиналы файлов (ecr.Entity) в хранилище ECR
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ProcessingAction.CheckProperties">
+            <summary>
+            Свойсто определяет нужно ли производить проверки свойств файлового объекта при обработке/загрузке в ECR
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.TextProcessor">
+            <summary>
+            Класс процессинга текстовых объектов ECR
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.#ctor(System.Int32)">
+            <summary>
+            TextProcessor class constructor
+            </summary>
+            <param name="ContainerId">Идентификатор контейнера для определения преобразований</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.LoadContainerProperties(System.Int32)">
+            <summary>
+            Процедура инициализации свой контейнера для определения преобразований
+            </summary>
+            <param name="ContainerId">Идентификатор контейнера для определения преобразований</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String@)">
+            <summary>
+            Загрузка данных в процессинговый объект
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String,System.String@)">
+            <summary>
+            Загрузка данных в процессинговый объект
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="Params"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String[],System.String@)">
+            <summary>
+            Загрузка данных в процессинговый объект
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="Params"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.GetBase">
+            <summary>
+            Преобразование оригинального представления
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.DefaultProcessing(System.String)">
+            <summary>
+            Процедура производит преобразования "по умолчанию"
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.PropertiesCheck(System.String,System.String[],System.String@)">
+            <summary>
+            Проверка свойств строки согласно свойствам, заданным в контейнере
+            </summary>
+            <param name="s">Проверяемая строка</param>
+            <param name="Params">Строка передачи параметров</param>
+            <param name="err">Возвращаемое описание ошибки</param>
+            <returns>true если проверка прошла успешно, false - в противном случае</returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CreateView(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ItemType"></param>
+            <param name="Params"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CreateView(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="ItemType"></param>
+            <param name="Params"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CheckUnexpectedSet(System.String,System.String@)">
+            <summary>
+            Проверка на вхождение наборов неразрешенных символов
+            </summary>
+            <param name="s"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CheckLiteralUnexpectedSet(System.String,System.String@)">
+            <summary>
+            Проверка на вхождение трех (и, соответственно, более) одинаковых буквенных символов (кроме явно определенных исключений)
+            </summary>
+            <param name="s"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CheckUnexpectedChars(System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CheckStringStart(System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CheckStringEnd(System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.MultilineTrim(System.String)">
+            <summary>
+            Функция Trim() для всех встречающихся абзацев в тексте
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CorrectParagraphs(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.CorrectHtmlTags(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.DeleteHtmlTags(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.ReplaceDoubleSymbol(System.String,System.Char)">
+            <summary>
+            Функция замены двойного вхождения символа symbol в строке s
+            </summary>
+            <param name="s"></param>
+            <param name="symbol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.EscapeXmlSymbols(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.UnescapeXmlSymbols(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.ByteToStr(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.StrToByte(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.TextProcessor.Clear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.TextProcessor.ContainerId">
+            <summary>
+            Идентификатор контейнера для определения преобразований
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.GraphicsProcessor">
+            <summary>
+            Класс процессинга графических объектов ECR
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.#ctor(System.Int32)">
+            <summary>
+            GraphicsProcessor class constructor
+            </summary>
+            <param name="ContainerId">Идентификатор контейнера для определения преобразований</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.LoadContainerProperties(System.Int32)">
+            <summary>
+            Процедура инициализации свой контейнера для определения преобразований
+            </summary>
+            <param name="ContainerId">Идентификатор контейнера для определения преобразований</param>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="Params"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.LoadObject(System.Object,System.Boolean,System.Boolean,System.String[],System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="CheckProperties"></param>
+            <param name="ProcessingDefault"></param>
+            <param name="Params"></param>
+            <param name="err"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetBase">
+            <summary>
+            Преобразование оригинального представления
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.DefaultProcessing">
+            <summary>
+            Процедура производит преобразования "по умолчанию"
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.CreateView(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ItemType"></param>
+            <param name="Params"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.CreateView(System.String,System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="ItemType"></param>
+            <param name="Params"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.PropertiesCheck(System.Byte[],System.String[],System.String@)">
+            <summary>
+            Проверка свойств объекта согласно свойствам, заданным в контейнере
+            </summary>
+            <param name="o">Массив байт, соответствующий изображению</param>
+            <param name="Params">Строка передачи параметров</param>
+            <param name="err">Возвращаемое описание ошибки</param>
+            <returns>true если проверка прошла успешно, false - в противном случае</returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.Clear">
+            <summary>
+            Очистка буфера изображений
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.CreateImageView(Atalasoft.ImgX6Interop.ImgX_MemoryFileTypes,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ImageType"></param>
+            <param name="Width"></param>
+            <param name="Quality"></param>
+            <param name="DebugPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.LoadImage(System.Byte[],Atalasoft.ImgX6Interop.ImgX_MemoryFileTypes)">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="ImageType"></param>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.ExportImage(Atalasoft.ImgX6Interop.ImgX_MemoryFileTypes)">
+            <summary>
+            
+            </summary>
+            <param name="ImageType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.ExportImage(System.String,Atalasoft.ImgX6Interop.ImgX_MemoryFileTypes)">
+            <summary>
+            </summary>
+            <param name="ImagePath"></param>
+            <param name="ImageType"></param>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImageFormat(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImagePixelFormat(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.ImageFormatEquals(System.Drawing.Imaging.ImageFormat,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            
+            </summary>
+            <param name="Source"></param>
+            <param name="Target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.EXIFClear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImgXMemoryFileType(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImgXMemoryFileType(System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            
+            </summary>
+            <param name="Format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImgXFileSaveType(Atalasoft.ImgX6Interop.ImgX_MemoryFileTypes)">
+            <summary>
+            
+            </summary>
+            <param name="ImageType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImgXFileExt(Atalasoft.ImgX6Interop.ImgX_MemoryFileTypes)">
+            <summary>
+            
+            </summary>
+            <param name="ImageType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImageRawFormat(System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            
+            </summary>
+            <param name="Format"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.GraphicsProcessor.GetImageRawFormat(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Format"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ECR.ProcessingManager.GraphicsProcessor.ContainerId">
+            <summary>
+            Идентификатор контейнера для определения преобразований
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.ExecuteActionConfigElement">
+            <summary>
+            The class that holds onto each element returned by the configuration manager.
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.Key">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.Enabled">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.Overwrite">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.Source">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.Mask">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.ItemType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.ContainerType">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.ContainerId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.SaveOriginals">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.DefaultProcessing">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.CheckProperties">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.BackupTo">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionConfigElement.Description">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:ECR.ProcessingManager.ExecuteActionsConfigCollection">
+            <summary>
+            The collection class that will store the list of each element/item that is returned back from the configuration manager
+            </summary>
+        </member>
+        <member name="M:ECR.ProcessingManager.ExecuteActionsConfigCollection.CreateNewElement">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.ProcessingManager.ExecuteActionsConfigCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ECR.ProcessingManager.ExecuteActionsConfigCollection.Item(System.Int32)">
+            <summary>
+            </summary>
+            <param name="idx"></param>
+        </member>
+    </members>
+</doc>

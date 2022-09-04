@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECR.KeysComparer</name>
+    </assembly>
+    <members>
+        <member name="T:ECR.KeysComparer.CompareAction">
+            <summary>
+            Класс предоставляет интерфейс для управления заданием сопоставления имен файлов по ключам во входящей папке
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.#ctor(System.String)">
+            <summary>
+            Конструктор класса CompareAction
+            </summary>
+            <param name="key">Ключ задания сопоставления. Уникальный идентификатор guid</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.#ctor(System.String,System.Boolean)">
+            <summary>
+            Конструктор класса CompareAction
+            </summary>
+            <param name="key">Ключ задания сопоставления. Уникальный идентификатор guid</param>
+            <param name="DebugMode">Определяет включение/выключение режима Debug в классе. DebugMode = true включает режим debug</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.ConfigureLoggingSubsystem">
+            <summary>
+            Конфигурирование подсистемы логгирования
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.Debug(System.String)">
+            <summary>
+            Запись данных режиме в Log.Debug() с проверкой режима отладки
+            </summary>
+            <param name="message">Сообщение для debug</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.Debug(System.String,System.Exception)">
+            <summary>
+            Запись данных в режиме Log.Debug() с проверкой режима отладки и описанием Exception
+            </summary>
+            <param name="message">Сообщение для debug</param>
+            <param name="e">Exception для debug</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.Enable">
+            <summary>
+            Метод переводит состояние задания сопоставления в "доступно"
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.Disable">
+            <summary>
+            Метод переводит состояние задания сопоставления в "недоступно"
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.Execute">
+            <summary>
+            Метод запускает задание сопоставления имен файлов по ключам во входящей папке по заданным правилам
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAction.GetKeyTokenValue(System.String,System.String,System.String,System.String)">
+            <summary>
+            Функция осуществляет преобразования имени файла по заданным правилам
+            </summary>
+            <param name="input">Имя файла для преобразования</param>
+            <param name="pattern">Шаблон регулярного выражения для преобразования</param>
+            <param name="key_token">Токен для определения ключа</param>
+            <param name="empty_token">Токен для подстановки пустой строки</param>
+            <returns>Преобразованное по заданным правилам имя файла</returns>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.Key">
+            <summary>
+            Свойство возвращает ключ задания сопоставления (уникальный идентификатор guid)
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.Enabled">
+            <summary>
+            Свойство возвращет состояние доступности задания сопоставления
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.DebugMode">
+            <summary>
+            Свойство определяет режим debug в классе
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.Source">
+            <summary>
+            Свойство определяет путь к входящей папке с файлами для сопоставления;
+            В случае отсутствия папки либо доступа к ней генерируется exception;
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.SourceMask">
+            <summary>
+            Свойство определяет маску имени файла во входящей папке
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.Destination">
+            <summary>
+            Свойство определяет путь к исходящей папке с файлами для сопоставления;
+            В случае отсутствия папки либо доступа к ней генерируется exception;
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.CompareMask">
+            <summary>
+            Свойство определяет маску имени файла в исходящей папке
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.ArchivePath">
+            <summary>
+            Свойство определяет путь к папке архива переименованных файлов;
+            В случае отсутствия папки либо доступа к ней генерируется exception;
+            Допустимо значение string.Empty: в этом случае переименованные файлы в архив не пишутся;
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.ConflictsPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.DataBinding">
+            <summary>
+            Свойство определяет привязку к каталогу данных, по которому производится поиск позиций;
+            Привязка к каталогу осуществляется посредством выборки данных экземпляром класса DataConnectionProvider
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAction.Overwrite">
+            <summary>
+            Свойство определяет, нужно ли заменять уже существующие файлы в исходящей (целевой) папке
+            </summary>
+        </member>
+        <member name="T:ECR.KeysComparer.CompareAgent">
+            <summary>
+             Класс предоставляет интерфейс для управления заданиями сопоставления файлов по ключам в загруженной конфигурации
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAgent.#ctor">
+            <summary>
+            Конструктор класса CompareAgent
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAgent.#ctor(System.Boolean)">
+            <summary>
+            Конструктор класса CompareAgent
+            </summary>
+            <param name="DebugMode">Определяет включение/выключение режима debug в классе. DebugMode = true включает режим debug</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAgent.ConfigureLoggingSubsystem">
+            <summary>
+            Конфигурирование подсистемы логгирования
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAgent.Debug(System.String)">
+            <summary>
+            Запись данных режиме в Log.Debug() с проверкой режима отладки
+            </summary>
+            <param name="message">Сообщение для debug</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAgent.Debug(System.String,System.Exception)">
+            <summary>
+            Запись данных в режиме Log.Debug() с проверкой режима отладки и описанием Exception
+            </summary>
+            <param name="message">Сообщение для Debug</param>
+            <param name="e">Exception для debug</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAgent.Execute(System.Int32)">
+            <summary>
+            Метод запускает задание с номером index на выполнение
+            </summary>
+            <param name="index">Индекс задания</param>
+        </member>
+        <member name="M:ECR.KeysComparer.CompareAgent.Execute">
+            <summary>
+             Метод запускает все доступные задания на выполнение
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAgent.DebugMode">
+            <summary>
+            Свойство определяет включение/выключение режима debug в классе
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.CompareAgent.Count">
+            <summary>
+            Свойство возвращает количество заданий
+            </summary>
+        </member>
+        <member name="T:ECR.KeysComparer.KeysComparer">
+            <summary>
+            Оберточный класс, реализующий функциональность класса CompareAgent в консоли
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.Main(System.String[])">
+            <summary>
+            Главная процедура запуска консоли приложения
+            </summary>
+            <param name="p_args">Массив аргументов командной строки</param>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.Execute(System.String[])">
+            <summary>
+            Функция запускает основную процедуру приложения
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.IsApplicationInteractive">
+            <summary>
+            Функция определяет, может ли приложение взаимодействовать с рабочим столом (есть ли главное окно приложения)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.ConfigureConsoleOutput">
+            <summary>
+            Настройка параметров вывода в консоль
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.ConfigureLoggingSubsystem">
+            <summary>
+            Конфигурирование подсистемы логгирования (log4net) 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.PrintDebugHeader">
+            <summary>
+            Вывод информации о включении отладочного режима в приложении
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.PrintFooter">
+            <summary>
+            Остановка приложения с ожиданием нажатия любой клавиши в отладочном режиме
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.PrintAssemblyInfo">
+            <summary>
+            Процедура выводит информацию о приложении/сборке в консоль
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.GetAssemblyInfo">
+            <summary>
+            Функция возвращает краткую информацию о наименовании и версии сборки
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.KeysComparer.KeysComparer.PrintUsageStatement">
+            <summary>
+            Процедура выводит в консоль справочную информацию о доступных командах консоли приложения
+            </summary>
+        </member>
+        <member name="T:ECR.KeysComparer.ExecuteActionConfigElement">
+            <summary>
+            The class that holds onto each element returned by the configuration manager.
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Key">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Enabled">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Source">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.SourceMask">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Archive">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Conflicts">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Destination">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.CompareMask">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.DataBinding">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Overwrite">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionConfigElement.Description">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:ECR.KeysComparer.ExecuteActionsConfigCollection">
+            <summary>
+            The collection class that will store the list of each element/item that is returned back from the configuration manager
+            </summary>
+        </member>
+        <member name="M:ECR.KeysComparer.ExecuteActionsConfigCollection.CreateNewElement">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECR.KeysComparer.ExecuteActionsConfigCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionsConfigCollection.Item(System.Int32)">
+            <summary>
+            </summary>
+            <param name="idx"></param>
+        </member>
+        <member name="T:ECR.KeysComparer.ExecuteActionsConfigSection">
+            <summary>
+            The Class that will have the XML config file data loaded into it via the configuration Manager.
+            </summary>
+        </member>
+        <member name="P:ECR.KeysComparer.ExecuteActionsConfigSection.ActionItems">
+            <summary>
+            The value of the property here "actions" needs to match that of the config file section
+            </summary>
+        </member>
+    </members>
+</doc>

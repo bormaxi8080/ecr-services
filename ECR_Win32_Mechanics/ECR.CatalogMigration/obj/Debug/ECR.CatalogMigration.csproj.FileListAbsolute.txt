@@ -1,0 +1,9 @@
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.CatalogMigration\bin\Debug\ECR.CatalogMigration.exe.config
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.CatalogMigration\bin\Debug\ECR.CatalogMigration.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.CatalogMigration\bin\Debug\ECR.CatalogMigration.pdb
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.CatalogMigration\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.CatalogMigration\obj\Debug\ECR.CatalogMigration.exe
+D:\TFSProjects\ECR services\trunk\src\ECR_Win32_Mechanics\ECR.CatalogMigration\obj\Debug\ECR.CatalogMigration.pdb
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.CatalogMigration\bin\Debug\ECR.CatalogMigration.exe.config
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.CatalogMigration\obj\Debug\ECR.CatalogMigration.exe
+D:\TFSProjects\ECR services\ECR_Win32_Mechanics\ECR.CatalogMigration\obj\Debug\ECR.CatalogMigration.pdb

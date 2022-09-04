@@ -1,0 +1,17 @@
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\Debug\ECRManagedComObjects.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\Debug\ECRManagedComObjects.pdb
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\Debug\ECRManagedComObjects.tlb
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.pdb
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\Interop.COMAdmin.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.csproj.ResolveComReference.cache
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.CustomActionsInstaller.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.IdentityOptions.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.SetupOptions.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.csproj.GenerateResource.Cache
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\obj\Debug\ECRManagedComObjects.ExportProxy.resources
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\Debug\ECRManagedAssemblies.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\Debug\ECRManagedAssemblies.pdb
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\Debug\ECRManagedAssemblies.xml
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedComObjects\bin\Debug\Interop.COMAdmin.dll

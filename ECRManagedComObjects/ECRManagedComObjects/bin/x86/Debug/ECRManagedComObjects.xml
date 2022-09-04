@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ECRManagedComObjects</name>
+    </assembly>
+    <members>
+        <member name="T:ECRManagedComObjects.ExportProxy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ECRManagedComObjects.ExportProxy.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.ExportProxy.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ECRManagedComObjects.ExportProxy.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.ExportProxy.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.ExportProxy.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.ExportProxy.btnNext_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.ExportProxy.btnBrowse_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:ECRManagedComObjects.ExportProxy.ProxyFileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ECRManagedComObjects.ECRDataReader">
+            <summary>
+            ECRDataReader class provides data access to read (not write) data from ECR storages
+            </summary>
+        </member>
+        <member name="T:ECRManagedComObjects.IECRDataReader">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetBindingsList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetBinding(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetBindingNameByAlias(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="DisplayAlias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetBindingAliasByName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.CheckBindingExists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetEntityList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetEntityListByBinding(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="BindingName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetEntity(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.CheckEntityExists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.IsEntityMultiplied(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetEntityNameByAlias(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="DisplayAlias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetEntityAliasByName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetViewList(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="Enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetViewListByBinding(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="BindingName"></param>
+            <param name="Enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetViewListByEntity(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="EntityName"></param>
+            <param name="Enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetView(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetViewNameByAlias(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="DisplayAlias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetViewAliasByName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.CheckViewExists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.IsViewEnabled(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.IsViewMultiplied(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetStorageList">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetStorage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetStorageForEntity(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="EntityName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetStorageForView(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ViewName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.CheckStorageExists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetStorageNameByAlias(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="DisplayAlias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetStorageAliasByName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetEntityItem(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="EntityName"></param>
+            <param name="Key"></param>
+            <param name="Number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetEntityItems(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="EntityName"></param>
+            <param name="Key"></param>
+            <param name="Number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRDataReader.GetViewItem(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="ViewName"></param>
+            <param name="Key"></param>
+            <param name="Number"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.#ctor">
+            <summary>
+            ECRDataReader class constructor
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetConnectionTimeout">
+            <summary>
+            This method gets ConnectionTimeout value from system registry
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetCommandTimeout">
+            <summary>
+            This method gets CommandTimeout value from system registry
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetDataSourceServerName">
+            <summary>
+            This method gets DataSource server name value to connect to ECR_Config database from system registry
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetBindingsList">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию о наборе всех объектов Binding, доступных в системе ECR;
+            </summary>
+            <returns>ADODB.Recordset. Набор данных объектов Binding</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetBinding(System.String)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объекте Binding с заданным именем;
+            </summary>
+            <param name="SystemName">Системное имя объекта Binding</param>
+            <returns>ADODB.Recordset. Набор данных объекта Binding</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetBindingNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает имя объекта Binding по его целочисленному псевдониму;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним для объекта Binding</param>
+            <returns>String. Системное имя объекта Binding</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetBindingAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним объекта Binding по его системному имени
+            </summary>
+            <param name="SystemName">Системное имя для объекта Binding</param>
+            <returns>Integer. Целочисленный псевдоним объекта Binding</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.CheckBindingExists(System.String)">
+            <summary>
+            Процедра возвращает признак существования объекта Binding с заданным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для объекта Binding</param>
+            <returns>Bool. Признак существования объекта Binding</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetEntityList">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию о наборе всех объектов Entity, доступных в системе ECR;
+            </summary>
+            <returns>ADODB.Recordset. Набор данных объектов Entitiy</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetEntityListByBinding(System.String)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию о наборе всех объектов Entity, доступных в системе ECR и имеющих привязку к объекту Binding с заданным именем;
+            </summary>
+            <param name="BindingName">Системное имя объекта Binding, для которого заданы объекты Entity</param>
+            <returns>ADODB.Recordset. Набор данных объектов Entitiy</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetEntity(System.String)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объекте Entity с заданным именем;
+            </summary>
+            <param name="SystemName">Системное имя для объекта Entity</param>
+            <returns>ADODB.Recordset. Набор данных объекта Entity</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.CheckEntityExists(System.String)">
+            <summary>
+            Процедра возвращает признак существования объекта Entity с заданным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для обекта Entity</param>
+            <returns>Bool. Признак существования объекта Entity</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.IsEntityMultiplied(System.String)">
+            <summary>
+            Процедура возвращает признак множественности для объекта Entity с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя для объекта Entity</param>
+            <returns>Bool. Признак множественности бъекта Entity с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetEntityNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает системное имя для объекта Entity с заданным сцелочисленным псевдонимом;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним для объекта Entity</param>
+            <returns>String. Системное имя объекта Entity</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetEntityAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним для объекта Entity с заданным системным именем;
+            </summary>
+            <param name="SystemName"></param>
+            <returns>Integer. Целочисленный псевдоним для объекта Entity</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetViewList(System.Boolean)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объектах View, доступных в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="Enabled">Признак доступности объектов View (true/false)</param>
+            <returns>ADODB.Recordset. Набор данных бъектов View</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetViewListByBinding(System.String,System.Boolean)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объектах View, доступных в конфигурационном хранилище системы ECR
+                и имеющих привязку к объекту Binding через родительский объект Entity;
+            </summary>
+            <param name="BindingName">Системное имя объекта Binding, к которому имеют приязку объекты View</param>
+            <param name="Enabled">Признак доступности объектов View (true/false)</param>
+            <returns>ADODB.Recordset. Набор данных объектов View</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetViewListByEntity(System.String,System.Boolean)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объектах View, доступных в конфигурационном хранилище системы ECR
+                и являющихся наследниками объекта Entity с заданным системным именем;
+            </summary>
+            <param name="EntityName">Системное имя объекта Entity, являющегося родителем для объектов View</param>
+            <param name="Enabled">Признак доступности объектов View (true/false)</param>
+            <returns>ADODB.Recordset. Набор данных объектов View</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetView(System.String)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об оьъекте View с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>ADODB.Recordset. Набор данных объекта View</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetViewNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает системное имя для объекта View с заданным целочисленным псевдонимом;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним для объекта View</param>
+            <returns>String. Системное имя объекта View</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetViewAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним для объекта View с заданным системным;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Integer. Целочисленный псевдоним объекта View</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.CheckViewExists(System.String)">
+            <summary>
+            Процедра возвращает признак существования объекта Vew с заданным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Bool. Признак существования объекта View с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.IsViewEnabled(System.String)">
+            <summary>
+            Процедура возвращает признак доступности объекта View с заданным системным именем в конфигурационном хранилище системы ECR;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Bool. Признак доступности объекта View с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.IsViewMultiplied(System.String)">
+            <summary>
+            Процедура осуществляет проверку признака множественности объекта View с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя для объекта View</param>
+            <returns>Bool. Признак множественности объекта View с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetStorageList">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объектах Storage, зарегистрированных в конфигурационном хранилище системы ECR;
+            </summary>
+            <returns>ADODB.Recordset. Набор данных объектов Storage</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetStorage(System.String)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объекте Storage с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя доя объекта Storage</param>
+            <returns>ADODB.Recordset. Набор данных объекта Storage с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetStorageForEntity(System.String)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объекте Storage, к которому имеет привязку объект Entity с заданным системным именем;
+            </summary>
+            <param name="EntityName">Системное имя объекта Entity</param>
+            <returns>ADODB.Recordset. Набор данных объекта Storage</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetStorageForView(System.String)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий информацию об объекте Storage, к которому имеет привязку объект View с заданным системным именем;
+            </summary>
+            <param name="ViewName">Системное имя объекта View</param>
+            <returns>ADODB.Recordset. Набор данных объекта Storage</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.CheckStorageExists(System.String)">
+            <summary>
+            Процедура возвращает признак существования объекта Storage с заданным системным именем;
+            </summary>
+            <param name="SystemName">Системное имя объекта Storage</param>
+            <returns>Bool. Признак существования объекта Storage с заданным системным именем</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetStorageNameByAlias(System.Int32)">
+            <summary>
+            Процедура возвращает системное имя объекта Storage по его целочисленному псевдониму;
+            </summary>
+            <param name="DisplayAlias">Целочисленный псевдоним объекта Storage</param>
+            <returns>String. Системное имя объекта Storage</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetStorageAliasByName(System.String)">
+            <summary>
+            Процедура возвращает целочисленный псевдоним объекта Storage по его системному имени;
+            </summary>
+            <param name="SystemName">Системное имя объекта Storage</param>
+            <returns>Целочисленный псевдоним объекта Storage</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetEntityItem(System.String,System.String,System.Int32)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий данные об элементе файлового контента (оригинал), соответствующему заданным параметрам;
+            </summary>
+            <param name="EntityName">Системное имя объекта Entity (тип файлового контента, оригиналы)</param>
+            <param name="ItemKey">Ключ элемента. Основной параметр идентификации</param>
+            <param name="ItemNumber">Номер элемента. Значение "0" эквивалентно null для немножественных типов файлового контента</param>
+            <returns>ADODB.Recordset. Набор данных файлового контента (оригиналы, объект EntityData), соответствующий заданному элементу</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetEntityItems(System.String,System.String,System.Int32)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий данные об элементе файлового контента (оригинал), включая истоические элементы, соответствующему заданным параметрам;
+            </summary>
+            <param name="EntityName">Системное имя объекта Entity (тип файлового контента, оригиналы)</param>
+            <param name="ItemKey">Ключ элемента. Основной параметр идентификации</param>
+            <param name="ItemNumber">Номер элемента. Значение "0" эквивалентно null для немножественных типов файлового контента</param>
+            <returns>ADODB.Recordset. Набор данных файлового контента (оригиналы, объект EntityData), включая исторические элементы, соответствующий заданному элементу</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.GetViewItem(System.String,System.String,System.Int32)">
+            <summary>
+            Процедура возвращает объект ADODB.Recordset, предоставляющий данные об элементе файлового контента (представление), соответствующему заданным параметрам;
+            Исторические данные по представлениям файлового контента в хранилищах системы ECR не хранятся;
+            </summary>
+            <param name="ViewName">Системное имя объекта View (тип файлового контента, представления)</param>
+            <param name="ItemKey">Ключ элемента. Основной параметр идентификации</param>
+            <param name="ItemNumber">Номер элемента. Значение "0" эквивалентно null для немножественных типов файлового контента</param>
+            <returns>ADODB.Recordset. Набор данных файлового контента (представляения, объект ViewData), соответствующий заданному элементу</returns>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.Debug(System.String)">
+            <summary>
+            Запись отладочного сообщения message в System Event Log.
+            Процедура отрабатывает только при наличии выставленного флага _DEBUG в состояние true.
+            </summary>
+            <param name="message">Строка отладочного сообщения</param>
+        </member>
+        <member name="M:ECRManagedComObjects.ECRDataReader.LogEvent(System.String,System.String)">
+            <summary>
+            Логгирование сообщения message в System Event Log
+            </summary>
+            <param name="message">Строка сообщения для логгирования</param>
+            <param name="type">Тип сообщения: INFO, WARNING, ERROR</param>
+        </member>
+        <member name="T:ECRManagedComObjects.IECRServiceInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRServiceInfo.GetVersion">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRServiceInfo.GetECRConfigDatabaseVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRServiceInfo.GetECRConfigDatabaseVersionHistory">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRServiceInfo.GetStorageDatabaseVersion(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECRManagedComObjects.IECRServiceInfo.GetStorageDatabaseVersionHistory(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SystemName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ECRManagedComObjects.SetupOptions">
+            <summary>
+            </summary>
+        </member>
+        <member name="F:ECRManagedComObjects.SetupOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.SetupOptions_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.txtConnectionTimeout_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.txtCommandTimeout_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.SetupOptions.btnNext_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:ECRManagedComObjects.SetupOptions.ServerLocation">
+            <summary>
+            ServerLocation property
+            </summary>
+        </member>
+        <member name="P:ECRManagedComObjects.SetupOptions.ConnectionTimeout">
+            <summary>
+            ConnectionTimeout property
+            </summary>
+        </member>
+        <member name="P:ECRManagedComObjects.SetupOptions.CommandTimeout">
+            <summary>
+            CommandTimeout property
+            </summary>
+        </member>
+        <member name="P:ECRManagedComObjects.SetupOptions.DebugMode">
+            <summary>
+            DEBUG MODE property
+            </summary>
+        </member>
+        <member name="T:ECRManagedComObjects.IdentityOptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ECRManagedComObjects.IdentityOptions.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.IdentityOptions.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ECRManagedComObjects.IdentityOptions.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.IdentityOptions.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.IdentityOptions.IdentityOptions_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.IdentityOptions.btnCancel_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.IdentityOptions.btnNext_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:ECRManagedComObjects.IdentityOptions.UserName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ECRManagedComObjects.IdentityOptions.Password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ECRManagedComObjects.IdentityOptions.PasswordConfirm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ECRManagedComObjects.CustomActionsInstaller">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.CustomActionsInstaller.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ECRManagedComObjects.CustomActionsInstaller.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.CustomActionsInstaller.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ECRManagedComObjects.CustomActionsInstaller.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ECRManagedComObjects.CustomActionsInstaller.Install(System.Collections.IDictionary)">
+            <summary>
+            
+            </summary>
+            <param name="stateSaver"></param>
+        </member>
+        <member name="M:ECRManagedComObjects.CustomActionsInstaller.Uninstall(System.Collections.IDictionary)">
+            <summary>
+            
+            </summary>
+            <param name="savedState"></param>
+        </member>
+    </members>
+</doc>

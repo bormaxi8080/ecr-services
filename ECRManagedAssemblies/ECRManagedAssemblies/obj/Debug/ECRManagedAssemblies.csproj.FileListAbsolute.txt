@@ -1,0 +1,18 @@
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.dll.config
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.pdb
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedAssemblies\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedAssemblies\obj\Debug\ECRManagedAssemblies.dll
+D:\TFSProjects\ECRManagedComObjects\trunk\src\ECRManagedComObjects\ECRManagedAssemblies\obj\Debug\ECRManagedAssemblies.pdb
+D:\TFSProjects\ECRManagedAssemblies\trunk\src\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.dll.config
+D:\TFSProjects\ECRManagedAssemblies\trunk\src\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.dll
+D:\TFSProjects\ECRManagedAssemblies\trunk\src\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.pdb
+D:\TFSProjects\ECRManagedAssemblies\trunk\src\ECRManagedAssemblies\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECRManagedAssemblies\trunk\src\ECRManagedAssemblies\obj\Debug\ECRManagedAssemblies.dll
+D:\TFSProjects\ECRManagedAssemblies\trunk\src\ECRManagedAssemblies\obj\Debug\ECRManagedAssemblies.pdb
+D:\TFSProjects\ECR services\trunk\src\ECRManagedAssemblies\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.dll.config
+D:\TFSProjects\ECR services\trunk\src\ECRManagedAssemblies\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.dll
+D:\TFSProjects\ECR services\trunk\src\ECRManagedAssemblies\ECRManagedAssemblies\bin\Debug\ECRManagedAssemblies.pdb
+D:\TFSProjects\ECR services\trunk\src\ECRManagedAssemblies\ECRManagedAssemblies\obj\Debug\ResolveAssemblyReference.cache
+D:\TFSProjects\ECR services\trunk\src\ECRManagedAssemblies\ECRManagedAssemblies\obj\Debug\ECRManagedAssemblies.dll
+D:\TFSProjects\ECR services\trunk\src\ECRManagedAssemblies\ECRManagedAssemblies\obj\Debug\ECRManagedAssemblies.pdb

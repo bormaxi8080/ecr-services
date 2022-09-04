@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "ECR_Config Database", "ECR_Config Database\ECR_Config Database.ssmssqlproj", "{480CFEA0-61F7-4A83-90FC-5F28C4EB3FC3}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = $/ECR\u0020services/ECR_Config\u0020Database
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Team\u0020Foundation\u0020Server\u0020MSSCCI\u0020Provider
+		SccProjectUniqueName1 = ECR_Config\u0020Database\\ECR_Config\u0020Database.ssmssqlproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = ECR_Config\u0020Database\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{480CFEA0-61F7-4A83-90FC-5F28C4EB3FC3}.Default|Default.ActiveCfg = Default
+		{00000000-0000-0000-0000-000000000000}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

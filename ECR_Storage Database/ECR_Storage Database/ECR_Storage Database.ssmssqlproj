@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ECR_Storage Database">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="bm-dev\sql2008:WORKGROUP\borschev_m">
+          <Created>2010-04-06T20:08:53.0687196+07:00</Created>
+          <Type>SQL</Type>
+          <Server>bm-dev\sql2008</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="ddt-test:WORKGROUP\borschev_m">
+          <Created>2009-06-05T15:00:43.8566135+07:00</Created>
+          <Type>SQL</Type>
+          <Server>ddt-test</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="ddt-test\sql2008:WORKGROUP\borschev_m">
+          <Created>2010-02-05T14:30:03.6753787+06:00</Created>
+          <Type>SQL</Type>
+          <Server>ddt-test\sql2008</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="or-bkpro2\sql2008:WORKGROUP\borschev_m">
+          <Created>2010-02-04T16:07:40.5224388+06:00</Created>
+          <Type>SQL</Type>
+          <Server>or-bkpro2\sql2008</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="Update_ECR_Storage_1.1.6.14_1.1.7.15.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Update_ECR_Storage_1.1.6.14_1.1.7.15.sql</FullPath>
+        </FileNode>
+        <FileNode Name="hotfix_update_ECR_Storage_1.1.6.14_1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>hotfix_update_ECR_Storage_1.1.6.14_1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.1.5.13_1.1.6.14.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bm-dev\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bm-dev\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.1.5.13_1.1.6.14.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.1.4.12_1.1.5.13.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:bm-dev\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>bm-dev\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.1.4.12_1.1.5.13.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.1.3.11_1.1.4.12.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.1.3.11_1.1.4.12.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.1.2.10_1.1.3.11.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.1.2.10_1.1.3.11.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.1.1.9_1.1.2.10.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.1.1.9_1.1.2.10.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.5.8_1.1.1.9.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:or-bkpro2\sql2008:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>or-bkpro2\sql2008</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.5.8_1.1.1.9.sql</FullPath>
+        </FileNode>
+        <FileNode Name="create_db_ECR_Storage.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>create_db_ECR_Storage.sql</FullPath>
+        </FileNode>
+        <FileNode Name="generate_minimum_data_ECR_Storage1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>generate_minimum_data_ECR_Storage1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="generate_minimum_data_ECR_Storage2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>generate_minimum_data_ECR_Storage2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="generate_minimum_data_ECR_Storage_Series.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>generate_minimum_data_ECR_Storage_Series.sql</FullPath>
+        </FileNode>
+        <FileNode Name="generate_minimum_data_ECR_Storage_Persons.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>generate_minimum_data_ECR_Storage_Persons.sql</FullPath>
+        </FileNode>
+        <FileNode Name="generate_minimum_data_ECR_Storage_Organizations.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>generate_minimum_data_ECR_Storage_Organizations.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.4.7_1.0.5.8.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.4.7_1.0.5.8.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.3.6_1.0.4.7.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.3.6_1.0.4.7.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.1.4-1.0.2.5.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.1.4-1.0.2.5.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.1.3_1.0.1.4.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.1.3_1.0.1.4.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.1.2_1.0.1.3.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.1.2_1.0.1.3.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.1.1_1.0.1.2.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.1.1_1.0.1.2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="update_ECR_Storage_1.0.2.5_1.0.3.6.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:ddt-test:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>ddt-test</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>update_ECR_Storage_1.0.2.5_1.0.3.6.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+  <SccProjectName>$/ECR services/ECR_Storage Database</SccProjectName>
+  <SccAuxPath />
+  <SccLocalPath>..</SccLocalPath>
+  <SccProvider>MSSCCI:Team Foundation Server MSSCCI Provider</SccProvider>
+</SqlWorkbenchSqlProject>
